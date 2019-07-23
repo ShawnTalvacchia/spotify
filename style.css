@@ -1,0 +1,461 @@
+* { 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+  body {
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    min-height: 1064px;;
+    flex-direction: column;
+    margin: 0;
+  }
+
+    .container {
+      height: inherit; 
+      width: 1170px;   
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+    }
+
+      nav { 
+        height: 80px; 
+        width: inherit%;
+        background-color: rgba(0, 0, 0, 0.625); 
+        position: fixed;
+        z-index: 1;
+        min-width: 100%
+      }
+
+        nav ul {
+          width: 450px;
+          list-style-type: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-left: auto;
+          font-weight: 700;
+          }
+
+        nav li a {
+          line-height: 24px;
+          display: block;  
+          font-size: 15px;
+          font-weight: 700;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          letter-spacing: .5px;
+          position: relative;
+        }
+        
+        nav a {
+          color: white;
+          text-decoration: none;
+        }
+
+        nav a:hover {
+          color: #1db954;
+        }
+
+        .spotify-logo {
+          width: 132px;
+          height: 40px;
+          margin: 20px 0; 
+        }
+
+
+      header { 
+        height: 600px; 
+        background: linear-gradient(#f037a5 -40%,#fae62d 190%);
+        z-index: 0;
+      }
+
+        .hero-img {
+          height: 600px;
+          min-width: 100%;
+          background-image: url(img/hero-burst.svg);
+          background-repeat: no-repeat;
+          background-position: 50% 40%;
+          background-size: 7000px 1500px;
+          min-height: 100%;
+          box-sizing: border-box;
+          position: relative;
+          overflow: hidden;
+        }
+
+          #title {
+            width: inherit;
+            color: white;
+            text-align: center;
+            font-size: 80px;
+            font-weight: 1400;
+            letter-spacing: -.03em;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            font-family: Circular, Helvetica, Arial, sans-serif !important; 
+          }
+
+          #title2 {
+            width: inherit;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 1px;;
+            line-height: 1.1;
+            margin-bottom: 12px;
+            font-family: Circular, Helvetica, Arial, sans-serif;
+          }
+
+
+          header .container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .btn-spotify {
+            margin: 0 auto;
+            color: white;
+            background-color: #1db954;
+            padding: 16px 48px 18px;
+            border-width: 0px;
+            border-radius: 500px;
+            margin-top: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1;
+            letter-spacing: 2px;
+            transition-duration: .3s;
+            min-width: 160px;
+          }
+
+          .btn-spotify:hover {
+            cursor: pointer;
+            background-color: #1ed760;
+          }
+        
+        .promo-container {
+          padding: 48px 0;
+          background-color: #FFF;
+          min-height: 576px;
+          height: 480px;
+        }
+
+          .promo {
+            padding: 0;
+            background: #498172;
+            margin: 0 auto;
+            max-width: 1200px;
+            height: inherit;
+          }
+
+            .content {
+              display: flex;
+              flex-direction: column;
+              align-items: stretch;
+              flex-wrap: wrap;
+              color: #FFF;
+              text-align: center;
+              width: 100%;
+              align-items: center;
+              justify-content: center;
+              height: inherit;
+              min-height: 100%;
+              padding: 49px 0 0 0;
+            } 
+
+            .promption-header {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              height: inherit;
+            }
+
+            .headline {
+              margin: 0;
+              font-size: 24px;
+              font-weight: 700;
+              font-family: Circular, Helvetica, Arial, sans-serif;
+              font-weight: 700;
+              letter-spacing: -0.04em;
+              line-height: 1.15;
+            }
+
+            .subheadline {
+              margin-top: 8px;
+              font-family: Circular, Helvetica, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 400;
+              text-size-adjust: 100%;
+              line-height: 27px;
+            }
+
+            .btn-premium {
+              margin: 0 auto;
+              color: #498172;
+              background-color: #FFCDD2;
+              padding: 16px 48px 18px;
+              border-width: 0px;
+              border-radius: 500px;
+              margin-top: 24px;
+              text-transform: uppercase;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 1;
+              letter-spacing: 2px;
+              min-width: 160px;
+              transition-duration: .3s;
+            }
+
+            .btn-premium:hover {
+              cursor: pointer;
+            }
+
+            .legal-disclaimer {
+              font-size: 12px;
+              margin-top: 16px;
+              display: block;
+              margin-block-start: 1em;
+              margin-block-end: 1em;
+              margin-inline-start: 0px;
+              margin-inline-end: 0px;
+              font-family: Circular, Helvetica, Arial, sans-serif;
+            }
+
+            .legal-disclaimer a {
+              text-decoration: underline;
+              color: inherit !important;
+            }
+          
+
+      footer { 
+        height: 538px; 
+        background-color: black;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 70px;
+      }
+      
+      #footer {
+        margin: 0px;
+        padding: 60px 0px;
+        height: 100%;
+        min-height: 550px;
+      }
+
+        .rows {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          min-width: 100%;
+          font-family: Circular, Helvetica, Arial, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          padding: 25px 0 50px;
+          margin-bottom: .75em;
+          color: white;
+          text-decoration: none;
+          list-style-type: none;
+        }
+
+          .rows-a {
+            display: flex;
+            justify-content: space-between;
+            width: 42%;
+            min-width: 42%;
+            margin-left: 0px;
+          }
+
+          .row-1 img {
+            min-width: 25%;
+            margin-right: 15px;
+            margin-top: -10px;
+          }
+
+          .rows ul {
+            text-decoration: none;
+            list-style-type: none;
+          }
+
+          .rows ul a {
+            color: white;
+            text-decoration: none;
+          }
+
+          .rows ul li {
+            font-family: Circular, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding: .1875em 0;
+            margin-bottom: .75em;
+            
+          }
+
+          .rows ul li label {
+            color: #919496;
+            font-size: 12px;
+            letter-spacing: .08em;
+            margin: 50px 0 22px;
+            text-transform: uppercase;
+          }
+
+          .rows label {
+            text-transform: uppercase;
+            color: rgb(145, 148, 150);
+            list-style-type: none;
+          }
+
+          .icons ul {
+            display: flex;
+            height: 40px;
+          }
+
+          .icons ul li img {
+            height: 70px;
+          }
+
+          li a:hover {
+            color: #1db954
+          }
+          
+          .row-4 {
+            min-width: 35%;
+            display: flex;
+            justify-content: right;
+          }
+
+          .icons {
+            min-width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-left: auto;
+          }
+          
+          .instagram {
+            display: flex;  
+            background: url("img/instagram-icon.png") no-repeat;
+            background-size: 55px;
+            margin: 0 0 0 10px;
+            padding: 30px;
+          }
+
+          .instagram:hover {
+            background: url("img/instagram-icon-hover.png") no-repeat;
+            display: flex;  
+            background-size: 55px;
+            margin: 0 0 0 10px;
+            padding: 30px;
+          }
+          
+          .twitter {
+            display: flex;  
+            background: url("img/twitter-icon.png") no-repeat;
+            background-size: 55px;
+            margin: 0 0 0 10px;
+            padding: 30px;
+          }
+
+          .twitter:hover {
+            background: url("img/twitter-icon-hover.png") no-repeat;
+            display: flex;  
+            background-size: 55px;
+            margin: 0 0 0 10px;
+            padding: 30px;
+          }
+
+          .facebook {
+            display: flex;  
+            background: url("img/facebook-icon.png") no-repeat;
+            background-size: 55px;
+            margin: 0 0 0 10px;
+            padding: 30px;
+          }
+
+          .facebook:hover {
+            background: url("img/facebook-icon-hover.png") no-repeat;
+            display: flex;  
+            background-size: 55px;
+            margin: 0 0 0 10px;
+            padding: 30px;
+          }
+
+          .vietnam-flag {
+            background: url("img/vietnam.svg") no-repeat;
+            display: flex;  
+            background-size: 25px;
+            margin: 0 0 0 10px;
+            padding: 15px;
+          }
+
+          .bottom-1 {
+            display: flex;
+            justify-content: flex-end;
+            align-content: center;
+            margin-left: auto;
+          }
+
+          .bottom-1 a {
+            color: white;
+            text-decoration: none;
+            font-family: Circular, Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            color: rgb(145, 148, 150);
+          }
+
+          .bottom-1 a:hover {
+            color: #1db954
+          }
+
+          .bottom-2 {
+            display: flex;
+            justify-content: space-between;
+            min-width: 100%;
+          }
+
+
+          .bottom-2-a ul {
+            display: flex;
+            list-style-type: none;
+          }
+
+          .bottom-2-a li a {
+            padding-left: 25px;
+            font-family: Circular, Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            line-height: .8;
+            color: rgb(145, 148, 150);
+            text-decoration: none;
+            font-weight: 400;
+          }
+
+          .bottom-2-a li a:hover {
+            color: #1db954
+          }
+
+          .bottom-2-b {
+            display: flex;
+            justify-content: flex-end;
+            font-family: Circular, Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            line-height: .8;
+            color: rgb(145, 148, 150);
+            text-decoration: none;
+            font-weight: 400;
+            padding: 1em 0;
+            font-weight: 400;
+            letter-spacing: .05em;
+          }
+
+          .bottom-2-b p {
+            display: flex;
+            justify-content: flex-end;
+          }
