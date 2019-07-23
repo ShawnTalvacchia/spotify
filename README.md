@@ -4,5 +4,13 @@
 
 
 ![image](img/Example-Top.png)
+Top of the page.
+---
+
 ![image](img/Example-Bottom.png)
+Bottom of page, with sticky header. 
+---
+
 ![image](img/Example-Bottom-Interact.png)
+Interactive icons.
+---
